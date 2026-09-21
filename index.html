@@ -263,11 +263,11 @@
                 localStorage.setItem(STORAGE_KEY, JSON.stringify(attendanceData));
             }
 
-            // Render 45 Boxes
+            // Render Boxes (Starting from 18)
             function renderGrid() {
                 gridContainer.innerHTML = '';
                 
-                for (let i = 1; i <= TOTAL_BOXES; i++) {
+                for (let i = 18; i <= TOTAL_BOXES; i++) {
                     const box = document.createElement('div');
                     box.id = `box-${i}`;
                     
